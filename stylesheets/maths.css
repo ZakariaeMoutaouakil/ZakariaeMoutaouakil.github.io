@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+body{
+    margin: 0;
+}
+header{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 3fr auto auto auto;
+    padding-top: 0.5rem;
+}
+.left{
+    padding-left: 1em;
+}
+.right{
+    text-align: center;
+    padding-right: 1em;
+}
+header a{
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+header a[href="maths.html"]{
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
+    font-weight: bold;
+}
+header a.right:hover{
+    text-decoration: underline;
+    text-decoration-color: grey;
+}
+header a.left:hover, header a.right:hover{
+    opacity: 50%;
+}
+article p{
+    font-family: 'Roboto Mono', monospace;
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-right: 1em;
+}
+article a:visited{
+    color: red;
+}
+article a:hover{
+    color: violet;
+}
+footer{
+    position: fixed;
+    display: grid;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+footer h2{
+    font-size: 1em;
+    padding: 0 3em;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
