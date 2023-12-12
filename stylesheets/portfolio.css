@@ -7,7 +7,6 @@ header{
     grid-template-rows: 1fr;
     grid-template-columns: auto 3fr auto auto auto;
     padding-top: 0.5rem;
-    background-color: black;
 }
 .left{
     padding-left: 1em;
@@ -19,47 +18,39 @@ header{
 header a{
     text-decoration: none;
     font-family: 'Roboto Mono', monospace;
-    color: white;
+    color: black;
 }
 header a.right:hover{
     text-decoration: underline;
     text-decoration-color: grey;
 }
 header a.left:hover, header a.right:hover{
-    opacity: 80%;
+    opacity: 50%;
 }
 section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*column-gap: 1em;*/
-    /*margin-top: 5rem;*/
-    /*padding: 0 10%;*/
+    column-gap: 1em;
+    margin-top: 5rem;
+    padding: 0 10%;
 }
-article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    height: auto;
-    width: auto;
-    margin-top:10rem;
+section img{
+    max-width: 100%;
+    max-height: 200px;
 }
-h1{
-    color: white;
+section img:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+section h2{
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.05em;
+}
+article p{
     font-family: 'Roboto Mono', monospace;
-    margin-left: 10rem;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-p{
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    margin-left: 10rem;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-left: 3em;
+    padding-top: 3em;
 }
 footer{
     position: fixed;

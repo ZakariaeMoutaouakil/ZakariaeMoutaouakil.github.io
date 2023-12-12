@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheets/texteditor.css">
+</head>
+<body>
+<header>
+    <a class="left" href="../index.html">
+        Zakariae Moutaouakil | Mathématiques-Informatique
+    </a>
+    <div class="center"></div>
+    <a class="right" href="https://github.com/ZakariaeMoutaouakil/ZakariaeMoutaouakil.github.io" target="_blank">
+        GitHub
+    </a>
+    <a class="right" id="portfolio" href="../sublinks/portfolio.html">
+        Portfolio
+    </a>
+    <a class="right" href="mailto:zakariaemoutaouakil@proton.me">
+        Contact
+    </a>
+</header>
+<article>
+    <section id="left">
+        <label for="story">
+            <span id="dashed">
+                Hit shift to get autocompletion.
+                Then hit ctrl then either 1 to 5 to complete your input with a suggestion.</span>
+            <span>
+                Unfortunately, I could not deploy the model on render due to limited memory capacity of free tier.
+                I will look into another option.
+            </span>
+        </label>
+        <textarea id="story" name="story" rows="10" cols="33"  placeholder="Write something here">It was a dark and stormy night..</textarea>
+    </section>
+    <section id="right">
+        <div class="api">
+            <div id="container">
+                <button>
+                    GPT2
+                </button>
+                <button>
+                    BERT
+                </button>
+                <button>
+                    CUSTOM
+                </button>
+            </div>
+            <div class="suggestion" id="1">
+                ...
+            </div>
+            <div class="suggestion" id="2">
+                ...
+            </div>
+            <div class="suggestion" id="3">
+                ...
+            </div>
+            <div class="suggestion" id="4">
+                ...
+            </div>
+            <div class="suggestion" id="5">
+                ...
+            </div>
+        </div>
+    </section>
+</article>
+<footer>
+    <h2>© 2023-2024</h2>
+</footer>
+<script src="../scripts/texteditor.js"></script>
+</body>
+</html>
